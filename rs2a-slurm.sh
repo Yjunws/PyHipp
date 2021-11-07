@@ -14,11 +14,16 @@
 #SBATCH -e rs2a-slurm.%N.%j.err # STDERR
 =======
 #SBATCH --cpus-per-task=5	# number of processors per task
-#SBATCH -J "rs2b"   # job name
+#SBATCH -J "rs2a"   # job name
 
 ## /SBATCH -p general # partition (queue)
+<<<<<<< HEAD
 #SBATCH -o rs2b-slurm.%N.%j.out # STDOUT
 #SBATCH -e rs2b-slurm.%N.%j.err # STDERR
+>>>>>>> upstream/main
+=======
+#SBATCH -o rs2a-slurm.%N.%j.out # STDOUT
+#SBATCH -e rs2a-slurm.%N.%j.err # STDERR
 >>>>>>> upstream/main
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE

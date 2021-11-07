@@ -7,6 +7,7 @@
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --cpus-per-task=5	# number of processors per task
 <<<<<<< HEAD
+<<<<<<< HEAD
 #SBATCH -J "rs1a"   # job name
 
 ## /SBATCH -p general # partition (queue)
@@ -18,6 +19,13 @@
 ## /SBATCH -p general # partition (queue)
 #SBATCH -o rs1b-slurm.%N.%j.out # STDOUT
 #SBATCH -e rs1b-slurm.%N.%j.err # STDERR
+>>>>>>> upstream/main
+=======
+#SBATCH -J "rs1a"   # job name
+
+## /SBATCH -p general # partition (queue)
+#SBATCH -o rs1a-slurm.%N.%j.out # STDOUT
+#SBATCH -e rs1a-slurm.%N.%j.err # STDERR
 >>>>>>> upstream/main
 
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
